@@ -1,0 +1,79 @@
+name: brio
+description: "Tu energía, tu ritmo — nutrición y entrenamiento en una sola app."
+publish_to: none
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.6.1
+
+  # Navigation
+  go_router: ^14.6.3
+
+  # Network
+  dio: ^5.7.0
+
+  # Secure storage (JWT tokens)
+  flutter_secure_storage: ^9.2.4
+
+  # Local cache
+  hive_flutter: ^1.1.0
+
+  # Fonts
+  google_fonts: ^6.2.1
+
+  # Charts
+  fl_chart: ^0.69.0
+
+  # Video (looping exercise demonstrations)
+  video_player: ^2.9.2
+
+  # GPS + map for activities (Strava-style)
+  geolocator: ^13.0.2
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Barcode scanner (nutrition)
+  mobile_scanner: ^5.2.3
+
+  # On-device nutrition-label OCR (offline, no external services)
+  google_mlkit_text_recognition: ^0.13.0
+
+  # Persistent notification during the workout
+  flutter_local_notifications: ^18.0.1
+
+  # Activity sharing (photo + route)
+  image_picker: ^1.1.2
+  share_plus: ^10.1.4
+  gal: ^2.3.1
+  path_provider: ^2.1.5
+
+  # Utils
+  equatable: ^2.0.7
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+# App icon (the BRIO arc)
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icon/brio_icon.png"
+  adaptive_icon_background: "#0F0F14"
+  adaptive_icon_foreground: "assets/icon/brio_foreground.png"

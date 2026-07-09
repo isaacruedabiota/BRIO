@@ -1,0 +1,43 @@
+# ── OS / editor ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+*.swp
+
+# ── Claude Code local config ─────────────────────────────────────────────────
+.claude/
+
+# ── Secrets / environment ────────────────────────────────────────────────────
+.env
+brio-backend/.env
+!.env.example
+!brio-backend/.env.example
+
+# ── Python / Django backend ──────────────────────────────────────────────────
+brio-backend/venv/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+brio-backend/db.sqlite3
+*.sqlite3
+brio-backend/media/
+brio-backend/staticfiles/
+
+# ── Local deployment / runtime (personal infra — not published) ──────────────
+brio-backend/caddy_data/
+brio-backend/logs/
+brio-backend/caddy.exe
+brio-backend/nssm.exe
+brio-backend/Caddyfile
+brio-backend/*.ps1
+
+# ── Flutter build artifacts (brio/ also has its own .gitignore) ──────────────
+brio/build/
+brio/.dart_tool/
+brio/.flutter-plugins
+brio/.flutter-plugins-dependencies
+brio/.packages
+brio/.pub-cache/
+brio/.pub/
